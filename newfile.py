@@ -1,16 +1,9 @@
-def add(x,y):
-	c=x+y
-	print(c)
-add(5,6)
-
-def human(name,age):
-	print(name)
-	print(age)
-human('Revathi',18)
-
-def add(x,*y):
-	c=x
-	for i in y:
-		c+=i
-	print(c)
-add(100,200,300,400,500,600,700,00,900,1000)
+n=int(input('enter a number'))
+count=0
+for i in range(1,n+1):
+	if n%i==0:
+		count+=1
+if count==2:
+	print(n,'is a prime number')
+else:
+	print(n,'is not a prime number')
