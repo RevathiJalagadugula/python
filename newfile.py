@@ -1,9 +1,11 @@
 n=int(input('enter a number'))
-count=0
-for i in range(1,n+1):
-	if n%i==0:
-		count+=1
-if count==2:
-	print(n,'is a prime number')
+s=0
+a=n
+while n>0:
+	rem=n%10
+	s+=rem*rem*rem
+	n=n//10
+if a==s:
+	print(a,'is armstrong number')
 else:
-	print(n,'is not a prime number')
+	print(a,'is not a armstrong number')
