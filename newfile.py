@@ -1,11 +1,11 @@
 n=int(input('enter a number'))
-s=0
 a=n
+rev=0
 while n>0:
 	rem=n%10
-	s+=rem*rem*rem
+	rev=rev*10+rem
 	n=n//10
-if a==s:
-	print(a,'is armstrong number')
+if rev==a:
+	print(a,'is palindrome number')
 else:
-	print(a,'is not a armstrong number')
+	print(a,'is not a palindrome number')
